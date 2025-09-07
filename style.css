@@ -1,0 +1,15 @@
+
+/* Custom font */
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Extra styles for smooth look */
+.todo-container {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.todo-container:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}

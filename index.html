@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>To-Do List</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen p-4">
+
+  <!-- Main To-Do App Container -->
+  <div class="todo-container bg-white p-8 rounded-2xl shadow-xl w-full max-w-lg transition-all duration-300 transform scale-100 hover:scale-105">
+    <h1 class="text-4xl font-extrabold text-gray-900 mb-6 text-center">
+      MY TO-DO TASK
+    </h1>
+
+    <!-- Add Task Form -->
+    <form id="task-form" class="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-3">
+      <input
+        type="text"
+        id="task-input"
+        placeholder="Add a new task..."
+        class="flex-grow p-4 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-shadow duration-200"
+        required
+      />
+      <button
+        type="submit"
+        class="bg-blue-600 text-white font-semibold py-4 px-6 rounded-xl hover:bg-blue-700 transition-colors duration-200 shadow-md hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+      >
+        Add Task
+      </button>
+    </form>
+
+    <!-- Task List -->
+    <ul id="task-list" class="mt-8 space-y-4">
+      <!-- Tasks will be injected here by JavaScript -->
+    </ul>
+  </div>
+
+  <!-- External JS -->
+  <script src="app.js"></script>
+</body>
+</html>
